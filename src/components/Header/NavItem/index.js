@@ -16,6 +16,10 @@ export const NavLink = ({
     const target = document.getElementById(href.slice(1));
 
     if (!target) {
+      event.preventDefault();
+      const homeUrl = new URL('/', window.location.origin);
+      homeUrl.hash = href;
+      window.location.href = homeUrl.toString();
       onClickHandler?.(event);
       return;
     }

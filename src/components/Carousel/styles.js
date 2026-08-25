@@ -283,6 +283,55 @@ export const CarouselContainer = styled.div`
 		}
 	`)}
 
+	${mixins.xl(`
+		.alice-carousel__stage-item {
+			box-sizing: border-box;
+			display: inline-block;
+			vertical-align: top;
+			padding: 0 10px;
+			line-height: normal;
+
+			a {
+				display: block;
+				color: inherit;
+				text-decoration: none;
+			}
+
+			figure {
+				width: 100%;
+				margin: 0;
+				cursor: pointer;
+			}
+
+			img {
+				display: block;
+				max-width: 345px;
+				height: auto;
+				aspect-ratio: 2 / 3;
+				object-fit: cover;
+				border-radius: 165px;
+				box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+				transition: transform 250ms ease, box-shadow 250ms ease;
+
+				&:focus-visible {
+					outline: 3px solid ${({ theme }) => theme.colors.dark.brown0};
+					outline-offset: 6px;
+				}
+			}
+
+			figcaption {
+				max-width: 100vw;
+				margin-top: 18px;
+				color: ${({ theme }) => theme.colors.dark.brown0};
+				font-family: ${({ theme }) => theme.fonts.main};
+				font-size: 18px;
+				line-height: 1.2;
+				text-align: center;
+				transition: transform 250ms ease, color 250ms ease;
+			}
+		}
+	`)}
+
 	${mixins.lg(`
 		.alice-carousel__dots-item:nth-child(3):not(.__active),
 		.alice-carousel__dots-item:nth-child(5):not(.__active),

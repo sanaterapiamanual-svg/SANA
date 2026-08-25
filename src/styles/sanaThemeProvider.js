@@ -53,7 +53,8 @@ const GlobalStyle = createGlobalStyle `
   }
 
   :root {
-    color-scheme: only light;
+    color-scheme: only dark;
+    color-scheme: dark !important; 
   }
 
   @font-face {

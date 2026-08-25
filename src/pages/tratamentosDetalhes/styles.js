@@ -9,7 +9,7 @@ export const DetailsPage = styled.main`
 
 export const Intro = styled.header`
   max-width: 1200px;
-  margin: 0 auto 56px;
+  margin: 0 auto 10px;
   text-align: left;
 `;
 
@@ -25,6 +25,15 @@ export const Heading = styled.h1`
   margin: 60px 0 16px;
   font-family: ${({ theme }) => theme.fonts.atendimento};
   font-size: clamp(34px, 5vw, 45px);
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 1.05;
+`;
+
+export const Informative = styled.p`
+  margin: 0 16px;
+  font-family: ${({ theme }) => theme.fonts.description};
+  font-size: clamp(18px, 5vw, 23px);
   font-weight: 400;
   letter-spacing: 2px;
   line-height: 1.05;
@@ -61,6 +70,17 @@ export const ServiceImage = styled.img`
   object-fit: cover;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(79, 44, 16, 0.12);
+`;
+
+export const ServiceInfo = styled.div`
+  display: flex;
+  margin: 0 60px 24px 10px;
+  color: ${({ theme }) => theme.colors.dark.brown3};
+  font-family: ${({ theme }) => theme.fonts.description};
+  font-size: 20px;
+  text-align: justify;
+  justify-content: space-between;
+  line-height: 1.35;
 `;
 
 export const ServiceContent = styled.div`

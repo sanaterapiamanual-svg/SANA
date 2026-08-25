@@ -6,7 +6,7 @@ export const CarouselContainer = styled.div`
 	width: 100%;
 	grid-column: 1 / -1;
 	height: auto;
-	margin: 0;
+	margin: 0 0 100px 0;
 	padding: 0 clamp(16px, 8vw, 150px) 48px;
 	box-sizing: border-box;
 	overflow: hidden;

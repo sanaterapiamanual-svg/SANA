@@ -52,6 +52,10 @@ const GlobalStyle = createGlobalStyle `
     font-weight: 400;
   }
 
+  :root {
+    color-scheme: only light;
+  }
+
   @font-face {
     font-family: 'Akshar';
     src: url(${Akshar}) format('truetype');

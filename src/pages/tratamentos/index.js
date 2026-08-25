@@ -2,30 +2,41 @@ import { Button } from '../../components/Button';
 import { Carousel } from '../../components/Carousel';
 import { Title } from '../../components/Title';
 import { Container, HeaderTexts } from './styles';
-import image1 from '../../assets/images/massagemrelax.jpg';
+import image1 from '../../assets/images/relax.jpg';
 import image2 from '../../assets/images/drenagemLinfatica.png';
 import image3 from '../../assets/images/liberacao.jpg';
-import image4 from '../../assets/images/liberacao.jpg';
+import image4 from '../../assets/images/terapeutica.jpg';
 import image5 from '../../assets/images/pedras.jpg';
 import image6 from '../../assets/images/reiki.jpg';
+import image7 from '../../assets/images/spaDAY.jpg';
 import { PageContainer } from '../../components/Container';
 
 export const Tratamentos = () => {
   const title = 'TÉCNICAS UTILIZADAS';
   const btn = 'SAIBA MAIS';
-  const techniqueNames = ['MASSAGEM RELAXANTE', 'DRENAGEM LINFÁTICA', 'LIBERAÇÃO MIOFASCIAL', 'MASSAGEM TERAPÊUTICA', 'PEDRAS QUENTES', 'REIKI', 'DAY SPAs'];
-  const carouselItems = [image1, image2, image3, image4, image5, image6].map((image, index) => (
-    <figure key={image}>
-      <img src={image} alt={techniqueNames[index]} />
-      <figcaption>{techniqueNames[index]}</figcaption>
-    </figure>
+  const techniques = [
+    ['massagem-relaxante', 'MASSAGEM RELAXANTE', image1],
+    ['drenagem-linfatica', 'DRENAGEM LINFÁTICA', image2],
+    ['liberacao-miofascial', 'LIBERAÇÃO MIOFASCIAL', image3],
+    ['massagem-terapeutica', 'MASSAGEM TERAPÊUTICA', image4],
+    ['pedras-quentes', 'PEDRAS QUENTES', image5],
+    ['reiki', 'REIKI', image6],
+    ['spa-day', 'SPA DAYS', image7],
+  ];
+  const carouselItems = techniques.map(([slug, name, image]) => (
+    <a href={`/#/tratamentos/detalhes/${slug}`} key={slug}>
+      <figure>
+        <img src={image} alt={name} />
+        <figcaption>{name}</figcaption>
+      </figure>
+    </a>
   ));
   return (
     <PageContainer id="tratamentos">
       <Container>
         <HeaderTexts>
           <Title text={title}/>
-          <Button text={btn} href="/tratamentos/detalhes" />
+          <Button text={btn} href="/#/tratamentos/detalhes" />
         </HeaderTexts>
         <Carousel items={carouselItems} />
       </Container>

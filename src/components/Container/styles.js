@@ -8,7 +8,7 @@ export const Container = styled.section`
   grid-template-columns: 1fr 1fr;
   grid-column: 1 / -1;
 
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
     grid-template-columns: 1fr;
     min-width: 0;
   }

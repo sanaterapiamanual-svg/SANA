@@ -33,6 +33,12 @@ export const CarouselContainer = styled.div`
 		padding: 0 10px;
 		line-height: normal;
 
+		a {
+			display: block;
+			color: inherit;
+			text-decoration: none;
+		}
+
 		figure {
 			width: 100%;
 			margin: 0;
@@ -128,15 +134,160 @@ export const CarouselContainer = styled.div`
 		@media (min-width: 600px) and (max-width: 1023px) {
 			.alice-carousel__dots-item:nth-child(2):not(.__active),
 			.alice-carousel__dots-item:nth-child(4):not(.__active),
-			.alice-carousel__dots-item:nth-child(6):not(.__active) {
+			.alice-carousel__dots-item:nth-child(6):not(.__active),
+			.alice-carousel__dots-item:nth-child(7):not(.__active) {
 				display: none;
 			}
 		}
 
+	${mixins.mobile(`
+		.alice-carousel__stage-item {
+			box-sizing: border-box;
+			display: inline-block;
+			vertical-align: top;
+			padding: 0 10px;
+			line-height: normal;
+			
+			figure {
+				width: 35vw;
+				margin: 0 auto;
+				cursor: pointer;
+			}
+
+			figcaption {
+				max-width: 200px;
+				margin-top: 18px;
+				color: ${({ theme }) => theme.colors.dark.brown0};
+				font-family: ${({ theme }) => theme.fonts.main};
+				font-size: 18px;
+				line-height: 1.2;
+				text-align: center;
+				transition: transform 250ms ease, color 250ms ease;
+			}
+
+			img {
+				display: block;
+				max-width: 220px;
+				margin: 0 auto;
+				height: auto;
+				aspect-ratio: 2 / 3;
+				object-fit: cover;
+				border-radius: 165px;
+				box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+				transition: transform 250ms ease, box-shadow 250ms ease;
+
+				&:focus-visible {
+					outline: 3px solid ${({ theme }) => theme.colors.dark.brown0};
+					outline-offset: 6px;
+				}
+			}
+		}
+	`)}
+
+	${mixins.md(`
+		.alice-carousel__stage-item {
+			box-sizing: border-box;
+			display: inline-block;
+			vertical-align: top;
+			padding: 0 10px;
+			line-height: normal;
+
+			a {
+				display: block;
+				color: inherit;
+				text-decoration: none;
+			}
+
+			figure {
+				width: 100%;
+				margin: 0;
+				cursor: pointer;
+			}
+
+			img {
+				display: block;
+				max-width: 300px;
+				margin: 0 auto;
+				height: auto;
+				aspect-ratio: 2 / 3;
+				object-fit: cover;
+				border-radius: 165px;
+				box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+				transition: transform 250ms ease, box-shadow 250ms ease;
+
+				&:focus-visible {
+					outline: 3px solid ${({ theme }) => theme.colors.dark.brown0};
+					outline-offset: 6px;
+				}
+			}
+
+			figcaption {
+				max-width: 340px;
+				margin-top: 18px;
+				color: ${({ theme }) => theme.colors.dark.brown0};
+				font-family: ${({ theme }) => theme.fonts.main};
+				font-size: 18px;
+				line-height: 1.2;
+				text-align: center;
+				transition: transform 250ms ease, color 250ms ease;
+			}
+		}
+	`)}
+
+	${mixins.lg(`
+		.alice-carousel__stage-item {
+			box-sizing: border-box;
+			display: inline-block;
+			vertical-align: top;
+			padding: 0 10px;
+			line-height: normal;
+
+			a {
+				display: block;
+				color: inherit;
+				text-decoration: none;
+			}
+
+			figure {
+				width: 100%;
+				margin: 0;
+				cursor: pointer;
+			}
+
+			img {
+				display: block;
+				max-width: 300px;
+				height: auto;
+				aspect-ratio: 2 / 3;
+				object-fit: cover;
+				border-radius: 165px;
+				box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+				transition: transform 250ms ease, box-shadow 250ms ease;
+
+				&:focus-visible {
+					outline: 3px solid ${({ theme }) => theme.colors.dark.brown0};
+					outline-offset: 6px;
+				}
+			}
+
+			figcaption {
+				max-width: 340px;
+				margin-top: 18px;
+				color: ${({ theme }) => theme.colors.dark.brown0};
+				font-family: ${({ theme }) => theme.fonts.main};
+				font-size: 18px;
+				line-height: 1.2;
+				text-align: center;
+				transition: transform 250ms ease, color 250ms ease;
+			}
+		}
+	`)}
+
 	${mixins.lg(`
 		.alice-carousel__dots-item:nth-child(3):not(.__active),
 		.alice-carousel__dots-item:nth-child(5):not(.__active),
-		.alice-carousel__dots-item:nth-child(6):not(.__active) {
+		.alice-carousel__dots-item:nth-child(6):not(.__active),
+		.alice-carousel__dots-item:nth-child(7):not(.__active) {
 			display: none;
 		}
 	`)}
@@ -145,7 +296,7 @@ export const CarouselContainer = styled.div`
 		padding: 0 8px 32px;
 
 		.alice-carousel__stage-item {
-			padding: 0 12px;
+			padding: 5px 12px;
 		}
 	}
 `;

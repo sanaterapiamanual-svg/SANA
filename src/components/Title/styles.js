@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import * as mixins from '../../styles/mixins';
 
 export const TitlePiece = styled.h2`
   margin-bottom: ${({ marginBottom }) => marginBottom || '20px'};
@@ -7,4 +8,8 @@ export const TitlePiece = styled.h2`
   font-size: 40px;
   line-height: 1.1;
   font-weight: 400;
+
+  ${mixins.mobile(`
+    font-size: 30px;
+  `)}
 `;

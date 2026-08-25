@@ -3,6 +3,7 @@ import * as mixins from '../../styles/mixins';
 
 export const Container = styled.div`
   width: 100vw;
+  margin-top: 50px;
 
   ${mixins.lg(`
       gap: 15px;
@@ -20,6 +21,19 @@ export const HeaderTexts = styled.div`
   justify-content: space-between;
   margin: 0 102px 48px 150px;
   box-sizing: border-box;
+  
+  ${mixins.mobile(`
+    margin: 0 20px;
+
+    h2 {
+      font-size: 25px;
+    }
+    
+    a {
+      padding: 10px 15px;
+      margin-bottom: 15px;
+    }
+  `)}
 
   @media (max-width: 600px) {
     flex-wrap: wrap;

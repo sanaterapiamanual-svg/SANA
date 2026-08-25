@@ -9,7 +9,7 @@ import TratamentosDetalhes from './pages/tratamentosDetalhes';
 import LoaderWidget from './components/LoaderWidget';
 import WhatsAppLink from './components/WhatsAppLink';
 import { isLoading, onDomContentLoaded } from './utils/utils';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './App.css';
 
@@ -49,10 +49,14 @@ function App() {
   }
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route
-          path="/tratamentos/detalhes/*"
+          path="/tratamentos/detalhes/:serviceSlug"
+          element={<SiteLayout><TratamentosDetalhes /></SiteLayout>}
+        />
+        <Route
+          path="/tratamentos/detalhes"
           element={<SiteLayout><TratamentosDetalhes /></SiteLayout>}
         />
         <Route
@@ -60,7 +64,7 @@ function App() {
           element={<SiteLayout><HomePage /></SiteLayout>}
         />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

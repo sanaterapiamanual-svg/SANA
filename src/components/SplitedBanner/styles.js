@@ -8,6 +8,11 @@ export const ImagePanel = styled.div`
   background-size: cover;
   background-position: center;
   border-radius: 0px 15px 15px 0px;
+
+  @media (max-width: 767px) {
+    min-height: 45vh;
+    border-radius: 0;
+  }
 `;
 
 export const ContentPanel = styled.div`
@@ -16,6 +21,11 @@ export const ContentPanel = styled.div`
   justify-content: center;
   padding: 64px 48px;
   max-width: 700px;
+
+  @media (max-width: 767px) {
+    max-width: none;
+    padding: 40px 20px;
+  }
 `;
 
 export const ContentWrapper = styled.div`
@@ -34,6 +44,11 @@ export const Description = styled.p`
   font-size: 23px;
   line-height: 1.2;
   width: 600px;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    font-size: 18px;
+  }
 `;
 
 export const LinksRow = styled.div`

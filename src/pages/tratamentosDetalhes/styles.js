@@ -22,7 +22,7 @@ export const BtnContainer = styled.div`
 `;
 
 export const Heading = styled.h1`
-  margin: 0 0 16px;
+  margin: 60px 0 16px;
   font-family: ${({ theme }) => theme.fonts.atendimento};
   font-size: clamp(34px, 5vw, 45px);
   font-weight: 400;
@@ -36,7 +36,7 @@ export const ServiceSection = styled.article`
   align-items: center;
   gap: clamp(32px, 7vw, 110px);
   max-width: 1200px;
-  margin: 0 auto 80px;
+  margin: 20px auto 80px;
   padding: 0 0 80px;
   border-bottom: 3px solid ${({ theme }) => theme.colors.light.beige4};
 
@@ -57,7 +57,7 @@ export const ServiceSection = styled.article`
 export const ServiceImage = styled.img`
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 4;
+  height: 85%;
   object-fit: cover;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(79, 44, 16, 0.12);
@@ -72,6 +72,15 @@ export const ServiceTitle = styled.h2`
   margin: 0 0 10px;
   font-family: ${({ theme }) => theme.fonts.main};
   font-size: clamp(28px, 3vw, 40px);
+  font-weight: 400;
+  line-height: 1.1;
+`;
+
+export const ServiceOptionTitle = styled.h3`
+  margin: 28px 0 10px;
+  color: ${({ theme }) => theme.colors.dark.brown0};
+  font-family: ${({ theme }) => theme.fonts.main};
+  font-size: 26px;
   font-weight: 400;
   line-height: 1.1;
 `;

@@ -18,6 +18,11 @@ export const BannerLinks = styled.div`
   justify-content: center;
   gap: 100px;
   margin-top: 0;
+
+  ${mixins.mobile(`
+    flex-direction: column;
+    gap: 16px;
+  `)}
 `;
 
 export const BannerSection = styled.section`

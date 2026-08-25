@@ -10,23 +10,30 @@ export const ImagePanel = styled.div`
   margin: 50px 0 0 45px;
 
   ${mixins.mobile(`
-    height: min(70vh, 520px);
+    height: min(45vh, 360px);
     max-width: none;
     margin: 24px 0 0;
     padding: 0 16px;
   `)}
 
+  ${mixins.md(`
+    height: min(55vh, 480px);
+    max-width: 720px;
+    margin: 32px auto 0;
+    padding: 0 24px;
+  `)}
+
   ${mixins.lg(`
-    max-width: 800px;
-    height: min(80vh, 820px);
-    margin: 50px 0 0 45px;
-    padding: 0 16px;
+    height: min(80vh, 720px);
+    max-width: 720px;
+    margin: 32px auto 0;
+    padding: 0 20px;
   `)}
 
   ${mixins.xl(`
     max-width: 900px;
     height: min(90vh, 760px);
-    margin: 50px 0 0 45px;
+    margin: 50px 0 0 15px;
     padding: 0 16px;
   `)}
 `;
@@ -49,12 +56,31 @@ export const ContentPanel = styled.div`
   height: min(90vh, 760px);
 
   ${mixins.mobile(`
-    width: 100%;
+    width: auto;
+    max-width: none;
+    height: auto;
+    margin: 24px 20px;
   `)}
 
-  @media (max-width: 767px) {
-    max-width: none;
-  }
+  ${mixins.md(`
+    width: auto;
+    max-width: 720px;
+    height: auto;
+    margin: 32px auto 48px;
+  `)}
+
+  ${mixins.lg(`
+    width: auto;
+    max-width: 720px;
+    height: 800px;
+    margin: 0px auto 48px;
+  `)}
+
+  ${mixins.xl(`
+    width: auto;
+    max-width: 720px;
+    margin: 30px 0;
+  `)}
 `;
 
 export const ContentWrapper = styled.div`
@@ -64,6 +90,18 @@ export const ContentWrapper = styled.div`
   align-items: flex-start;
   text-align: left;
   gap: 20px;
+
+  ${mixins.mobile(`
+    width: 100%;
+  `)}
+
+  ${mixins.md(`
+    width: min(80vw, 500px);
+  `)}
+
+  ${mixins.xl(`
+    width: min(80vw, 700px);
+  `)}
 `;
 
 export const Description = styled.p`

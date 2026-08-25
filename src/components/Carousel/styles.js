@@ -271,7 +271,7 @@ export const CarouselContainer = styled.div`
 			}
 
 			figcaption {
-				max-width: 340px;
+				max-width: 100vw;
 				margin-top: 18px;
 				color: ${({ theme }) => theme.colors.dark.brown0};
 				font-family: ${({ theme }) => theme.fonts.main};

@@ -20,13 +20,13 @@ export const Tratamentos = () => {
   const btn = 'SAIBA MAIS';
 
   const techniques = [
-    ['massagem-relaxante', 'MASSAGEM RELAXANTE', image1],
+    ['massagem-relaxante', 'MASSAGEM RELAXANTE', image3],
     ['drenagem-linfatica', 'DRENAGEM LINFÁTICA', image2],
-    ['liberacao-miofascial', 'LIBERAÇÃO MIOFASCIAL', image3],
+    ['liberacao-miofascial', 'LIBERAÇÃO MIOFASCIAL', image1],
     ['massagem-terapeutica', 'MASSAGEM TERAPÊUTICA', image4],
     ['pedras-quentes', 'PEDRAS QUENTES', image5],
     ['reiki', 'REIKI', image6],
-    ['spa-day', 'SPA DAYS', image7],
+    ['spa-day', 'DAY SPAS', image7],
   ];
 
   const carouselItems = techniques.map(([slug, name, image]) => (

@@ -9,7 +9,7 @@ export const WhatsAppLink = ({
     <Container>
       <Link
         onClick={onClickHandler}
-        href="https://wa.me/5551995492876"
+        href="https://wa.me/5551995492876?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+os+servi%C3%A7os+de+massagem+e+tratamentos."
         target="_blank"
       >
       <img src={WhatsAppIcon} alt="Icone WhatsApp" />

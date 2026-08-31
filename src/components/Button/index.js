@@ -6,13 +6,14 @@ export const Button = ({
   id,
   marginBottom,
   padding,
+  target,
   text,
   }) => {
   return (
     <Btn
-      href={href ? href : 'https://wa.me/5551995492876'}
-      target={href?.startsWith('http') ? '_blank' : undefined}
-      rel={href?.startsWith('http') ? 'noreferrer' : undefined}
+      href={href ? href : 'https://wa.me/5551995492876?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+os+servi%C3%A7os+de+massagem+e+tratamentos.'}
+      target={target ? target : '_blank'}
+      rel={href?.startsWith('https') ? 'noreferrer' : undefined}
       id={id}
       marginBottom={marginBottom}
       padding={padding}
@@ -27,5 +28,6 @@ Button.propTypes = {
   id: PropTypes.string,
   marginBottom: PropTypes.string,
   padding: PropTypes.string,
+  target: PropTypes.string,
   text: PropTypes.string.isRequired,
 };

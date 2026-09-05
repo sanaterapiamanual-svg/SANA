@@ -3,12 +3,12 @@ import { Carousel } from '../../components/Carousel';
 import { Container, HeaderTexts } from './styles';
 import { DescriptionText } from '../../components/Description';
 import image1 from '../../assets/images/relax.jpg';
-import image2 from '../../assets/images/drenagemLinfatica.png';
+import image2 from '../../assets/images/drenagem.jpg';
 import image3 from '../../assets/images/liberacao.jpg';
 import image4 from '../../assets/images/terapeutica.jpg';
 import image5 from '../../assets/images/pedras.jpg';
 import image6 from '../../assets/images/reiki.jpg';
-import image7 from '../../assets/images/spaDAY.jpg';
+import image7 from '../../assets/images/spaDay.jpg';
 import { PageContainer } from '../../components/Container';
 import { ReviewCarousel } from '../../components/ReviewGoogle';
 import { Title } from '../../components/Title';
@@ -20,9 +20,9 @@ export const Tratamentos = () => {
   const btn = 'SAIBA MAIS';
 
   const techniques = [
-    ['massagem-relaxante', 'MASSAGEM RELAXANTE', image3],
+    ['massagem-relaxante', 'MASSAGEM RELAXANTE', image1],
     ['drenagem-linfatica', 'DRENAGEM LINFÁTICA', image2],
-    ['liberacao-miofascial', 'LIBERAÇÃO MIOFASCIAL', image1],
+    ['liberacao-miofascial', 'LIBERAÇÃO MIOFASCIAL', image3],
     ['massagem-terapeutica', 'MASSAGEM TERAPÊUTICA', image4],
     ['pedras-quentes', 'PEDRAS QUENTES', image5],
     ['reiki', 'REIKI', image6],

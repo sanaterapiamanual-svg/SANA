@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import * as mixins from '../../styles/mixins';
 
 export const DetailsPage = styled.main`
   min-height: 100vh;
@@ -81,6 +82,15 @@ export const ServiceInfo = styled.div`
   text-align: justify;
   justify-content: space-between;
   line-height: 1.35;
+
+  ${mixins.md(`
+    margin: 0 0px 24px;
+  `)}
+
+  ${mixins.mobile(`
+    margin: 0 0px 24px;
+    flex-direction: column;
+  `)}
 `;
 
 export const ServiceContent = styled.div`

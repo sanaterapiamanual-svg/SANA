@@ -1,5 +1,5 @@
 import { PageContainer } from '../../components/Container';
-import EscaldaPes from '../../assets/images/Escalda_pes.jpg';
+import espaco from '../../assets/images/espaco.jpg';
 import { PageSplitAtendimento } from '../../components/PageSplitAtendimento';
 
 export const Atendimento = () => {
@@ -18,7 +18,7 @@ export const Atendimento = () => {
     <PageContainer id="atendimento">
       <PageSplitAtendimento
         title={title}
-        imgSrc={EscaldaPes}
+        imgSrc={espaco}
         subtitle={subtitle}
         imgDescription="Imagem de um escalda pés."
         paragraph1={firstText}

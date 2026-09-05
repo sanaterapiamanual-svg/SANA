@@ -13,12 +13,12 @@ import {
   ServicesList,
 } from './styles';
 import image1 from '../../assets/images/relax.jpg';
-import image2 from '../../assets/images/drenagemLinfatica.png';
+import image2 from '../../assets/images/drenagem.jpg';
 import image3 from '../../assets/images/liberacao.jpg';
 import image4 from '../../assets/images/terapeutica.jpg';
 import image5 from '../../assets/images/pedras.jpg';
 import image6 from '../../assets/images/reiki.jpg';
-import image7 from '../../assets/images/spaDAY.jpg';
+import image7 from '../../assets/images/spaDay.jpg';
 import image8 from '../../assets/images/voucher.jpg';
 import { Button } from '../../components/Button';
 import { useEffect } from 'react';
@@ -29,7 +29,7 @@ const services = [
     slug: 'massagem-relaxante',
     title: 'MASSAGEM RELAXANTE',
     acrescimo: 'Acréscimo de 30min: R$159',
-    image: image3,
+    image: image1,
     description: 'Técnica com toque suave e ritmado que proporciona relaxamento profundo e equilíbrio do sistema nervoso.',
     duracao: 'Duração: 60min | Corpo Todo',
     valor: 'R$320',
@@ -51,7 +51,7 @@ const services = [
     slug: 'liberacao-miofascial',
     title: 'LIBERAÇÃO MIOFASCIAL',
     acrescimo: 'Acréscimo de 30min: R$159',
-    image: image1,
+    image: image3,
     description: 'Traz alívio de dores e tensões crônicas e aumento da mobilidade a partir da técnica de equilíbrio das fáscias musculares.',
     duracao: 'Duração: 60min | Corpo Todo',
     valor: 'R$320',

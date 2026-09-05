@@ -33,8 +33,8 @@ export const ImagePanel = styled.div`
   ${mixins.xl(`
     max-width: 900px;
     height: min(90vh, 760px);
-    margin: 50px 0 0 15px;
-    padding: 0 16px;
+    margin: 50px 0 0 100px;
+    padding: 0 40px;
   `)}
 `;
 
@@ -44,6 +44,10 @@ export const ImageArea = styled.img`
   height: 100%;
   object-fit: cover;
   border-radius: 15px;
+
+  ${mixins.xl(`
+    width: 90%;
+  `)}
 `;
 
 export const ContentPanel = styled.div`

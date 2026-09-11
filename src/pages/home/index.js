@@ -7,8 +7,8 @@ export const Home = () => {
   const subtitle = 'O cuidado começa quando você se escolhe.';
 
   const links = [
-    { title: 'TRATAMENTOS', href: '#tratamentos' },
-    { title: 'ATENDIMENTO', href: '#atendimento' },
+    { title: 'AGENDAR PELO WHATSAPP', href: 'https://wa.me/5551995492876?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+o+agendamento+dos+servi%C3%A7os+de+massagem+e+tratamentos.' },
+    { title: 'LIGAR', href: 'https://wa.me/5551995492876?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+os+servi%C3%A7os+de+massagem+e+tratamentos.' },
   ];
 
   return (

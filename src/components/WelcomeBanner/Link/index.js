@@ -16,6 +16,7 @@ export const ButtonLink = ({
       <Link
         onClick={onClickHandler}
         href={href}
+        target='_blank'
         className={`nav-link-${active ? 'active' : ''}`}
         width={width}
       >

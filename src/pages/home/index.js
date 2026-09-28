@@ -3,8 +3,8 @@ import { PageContainer } from '../../components/Container';
 import { WelcomeBanner } from '../../components/WelcomeBanner';
 
 export const Home = () => {
-  const title = 'uma experiência sensorial e terapêutica de corpo e alma';
-  const subtitle = 'O cuidado começa quando você se escolhe.';
+  const title = 'especialista em alívio de dores';
+  const subtitle = 'Quando o corpo relaxa a mente descansa';
 
   const links = [
     { title: 'AGENDAR PELO WHATSAPP', href: 'https://wa.me/5551995492876?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+o+agendamento+dos+servi%C3%A7os+de+massagem+e+tratamentos.' },

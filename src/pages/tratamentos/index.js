@@ -14,19 +14,20 @@ import { ReviewCarousel } from '../../components/ReviewGoogle';
 import { Title } from '../../components/Title';
 
 export const Tratamentos = () => {
-  const title = 'TÉCNICAS UTILIZADAS';
+  const title = 'TRATAMENTOS E VALORES';
   const text = 'MEMÓRIAS INESQUECÍVEIS';
   const reviewDesc = 'Descubra um pouco de como é a experiência SANA nas palavras de nossos clientes:';
   const btn = 'SAIBA MAIS';
 
   const techniques = [
-    ['massagem-relaxante', 'MASSAGEM RELAXANTE', image1],
+    ['massagem-relaxante', 'CORPO INTEIRO | 75 MIN', image1],
+    ['liberacao-miofascial', 'SESSÃO ESPECÍFICA | 40 MIN', image3],
     ['drenagem-linfatica', 'DRENAGEM LINFÁTICA', image2],
-    ['liberacao-miofascial', 'LIBERAÇÃO MIOFASCIAL', image3],
     ['massagem-terapeutica', 'MASSAGEM TERAPÊUTICA', image4],
     ['pedras-quentes', 'PEDRAS QUENTES', image5],
     ['reiki', 'REIKI', image6],
-    ['spa-day', 'DAY SPAS', image7],
+    ['spa-day', 'DAY SPA', image7],
+    ['pacotes-tratamento', 'PACOTES DE TRATAMENTO', image4],
   ];
 
   const carouselItems = techniques.map(([slug, name, image]) => (

@@ -34,7 +34,7 @@ export const ContentWrapper = styled.div`
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  gap: 20px;
+  gap: 18px;
 `;
 
 export const Description = styled.p`

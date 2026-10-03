@@ -15,6 +15,7 @@ export const SplitedBanner = ({
   paragraph1,
   paragraph2,
   paragraph3,
+  paragraph4,
   links = [],
   }) => {
   return (
@@ -27,6 +28,7 @@ export const SplitedBanner = ({
           <Description>{paragraph1}</Description>
           <Description>{paragraph2}</Description>
           <Description>{paragraph3}</Description>
+          <Description>{paragraph4}</Description>
 
           <LinksRow>
             {links.map((link) => (
@@ -45,6 +47,7 @@ SplitedBanner.propTypes = {
   paragraph1: PropTypes.string.isRequired,
   paragraph2: PropTypes.string.isRequired,
   paragraph3: PropTypes.string.isRequired,
+  paragraph4: PropTypes.string.isRequired,
   links: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string.isRequired,

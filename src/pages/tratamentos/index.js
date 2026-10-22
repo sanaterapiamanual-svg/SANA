@@ -23,7 +23,6 @@ export const Tratamentos = () => {
     ['massagem-relaxante', 'CORPO INTEIRO | 75 MIN', image1],
     ['liberacao-miofascial', 'SESSÃO ESPECÍFICA | 40 MIN', image3],
     ['drenagem-linfatica', 'DRENAGEM LINFÁTICA', image2],
-    ['massagem-terapeutica', 'MASSAGEM TERAPÊUTICA', image4],
     ['pedras-quentes', 'PEDRAS QUENTES', image5],
     ['reiki', 'REIKI', image6],
     ['spa-day', 'DAY SPA', image7],
